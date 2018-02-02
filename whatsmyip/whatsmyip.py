@@ -19,9 +19,9 @@ def get_ip_address(ifname):
 server_script_url = 'http://plebweb.fr/cours-iot/whatsmyip.php'
 
 hostname = socket.gethostname()
-internal_ip = get_ip_address('wlan0')
+local_ip = get_ip_address('wlan0')
 
-request_url = server_script_url + '?internal_ip=' + internal_ip + '&hostname=' + hostname
+request_url = server_script_url + '?local_ip=' + local_ip + '&hostname=' + hostname
 
 urllib2.urlopen(request_url).read()
 

@@ -20,16 +20,16 @@
 
     //Insert ips
     $public_ip = $_SERVER['REMOTE_ADDR'];
-    $internal_ip = $_GET['internal_ip'] ?? false;
+    $local_ip = $_GET['local_ip'] ?? false;
     $hostname = $_GET['hostname'] ?? false;
 
-    if ($public_ip && $internal_ip && $hostname)
+    if ($public_ip && $local_ip && $hostname)
     {
-        $insert_query = 'INSERT INTO ips (public_ip, internal_ip, hostname, at) VALUES (:public_ip, :internal_ip, :hostname, :at)';
+        $insert_query = 'INSERT INTO ips (public_ip, local_ip, hostname, at) VALUES (:public_ip, :local_ip, :hostname, :at)';
         $query = $pdo->prepare($insert_query);
         $query->execute([
             'public_ip' => $public_ip,
-            'internal_ip' => $internal_ip,
+            'local_ip' => $local_ip,
             'hostname' => $hostname,
             'at' => new \DateTime(),
         ]);
@@ -54,7 +54,7 @@
             <tr>
                 <td><?php echo htmlspecialchars($ip['at']); ?></td>
                 <td><?php echo htmlspecialchars($ip['public_ip']); ?></td>
-                <td><?php echo htmlspecialchars($ip['internal_ip']); ?></td>
+                <td><?php echo htmlspecialchars($ip['local_ip']); ?></td>
                 <td><?php echo htmlspecialchars($ip['hostname']); ?></td>
             </tr>
         <?php } ?>
