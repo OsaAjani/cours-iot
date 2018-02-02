@@ -19,9 +19,9 @@
 
 
     //Insert ips
-    $public_ip = $_POST['public_ip'] ?? false;
-    $internal_ip = $_POST['internal_ip'] ?? false;
-    $hostname = $_POST['hostname'] ?? false;
+    $public_ip = $_SERVER['REMOTE_ADDR'];
+    $internal_ip = $_GET['internal_ip'] ?? false;
+    $hostname = $_GET['hostname'] ?? false;
 
     if ($public_ip && $internal_ip && $hostname)
     {
