@@ -22,6 +22,7 @@
     $public_ip = $_SERVER['REMOTE_ADDR'];
     $local_ip = $_GET['local_ip'] ?? false;
     $hostname = $_GET['hostname'] ?? false;
+    $at = new \DateTime();
 
     if ($public_ip && $local_ip && $hostname)
     {
@@ -31,7 +32,7 @@
             'public_ip' => $public_ip,
             'local_ip' => $local_ip,
             'hostname' => $hostname,
-            'at' => new \DateTime(),
+            'at' => $at->format('Y-m-d H:i:s'),
         ]);
     }
 ?>
