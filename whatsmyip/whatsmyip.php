@@ -39,8 +39,20 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>Whatsmyip</title>
+    <meta charset="utf-8">
+    <title>Whatsmyip</title>
+    <style>
+        td,
+        th {
+            border: 1px solid black;
+            padding: 5px 10px;    
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+    </style>  
 </head>
 <body>
     <h1>Liste des IP et hostname associés</h1>
