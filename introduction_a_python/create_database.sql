@@ -7,4 +7,7 @@ CREATE TABLE  IF NOT EXISTS user (
     lastname VARCHAR(200),
     age INT,
     PRIMARY KEY (id)
-)
+);
+
+INSERT INTO user (firstname, lastname, age) VALUES ('Bernard', 'Tessier', 55);
+
