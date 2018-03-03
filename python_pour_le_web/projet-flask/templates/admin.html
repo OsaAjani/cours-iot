@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block titre %}
+    Administration
+{% endblock %}
+
+{% block body %}
+    <h1>Administration</h1>
+    <p>Bienvenue sur l'administration !</p>
+
+    <a href="{{ url_for('admin_logout') }}">Déconnexion</a>
+{% endblock %}

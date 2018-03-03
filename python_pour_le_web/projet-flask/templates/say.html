@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block titre %}
+    Say page
+{% endblock %}
+
+{% block body %}
+    <form action="" method="GET">
+        <input name="say" type="text" placeholder="What do you want to say ?" /><button>Say it !</button>
+    </form>
+    {% if say %}
+        You just said : {{ say }}
+    {% endif %}
+{% endblock %}

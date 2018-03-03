@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block titre %}
+    Show entries
+{% endblock %}
+
+{% block body %}
+    <h1>That's all the entries</h1>
+    <ul>
+        {% for entrie in entries %}
+            <li>{{ entrie.0 }} = {{ entrie.1 }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

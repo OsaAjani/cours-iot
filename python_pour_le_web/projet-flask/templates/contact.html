@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block titre %}
+    Say page
+{% endblock %}
+
+{% block body %}
+    <form action="" method="POST">
+        <label for="email">Votre email :</label><br/>
+        <input id="email" name="email" type="text"/><br/><br/>
+
+        <label for="message">Votre message :</lable><br/>
+        <textarea id="message" name="message"></textarea><br/><br/>
+
+        <button>Envoyer</button>
+    </form>
+
+    {% if email and message %}
+        Votre email : {{ email }}<br/>
+        Votre message : {{ message }}
+    {% endif %}
+{% endblock %}
