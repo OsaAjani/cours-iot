@@ -20,7 +20,7 @@
 </style>
 
 		<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="ofHy7wBuz5IroV8LK7knsRi58WvwhjNhofui4p0SuoYGMdXQoRZ3DSHosf5dmrW2Vv5vXWr9MUcbbhBblBzFgg==" />
+<meta name="csrf-token" content="qmUGsjewByAVt1UujtpiwACzjd88q+XaPjwXTR6tmIIZhsIOQeB+toYofg8Oyk0FrwEzIdjO8Jlh0k4syeWpWA==" />
 		<style id="user-css-output" type="text/css"></style>
 	</head>
 	<body>
@@ -488,7 +488,7 @@ name = 'titi'</code></pre></div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 484px;" data-block-id="93c44606265a3c043b828e56f5b87767"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
 <p style="text-align:left"><strong>Tuples : </strong>Comme une liste, mais qu'on peux pas modifier.</p>
 
-<pre style="text-align: left;">Ex : ['on', 'off', 'off', 'on'].</pre>
+<pre style="text-align:left">Ex : ('on', 'off', 'off', 'on').</pre>
 
 <p style="text-align:left"> </p>
 
@@ -911,7 +911,7 @@ print('Les {prod} coûtent {prix:.1f} € !'.format(prod = product, prix = price
 <p style="text-align:left"><strong>%</strong> : Modulo</p>
 </div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 629px;" data-block-id="f52ebd0c4256ce2aeb054cc9c3e0598e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;">
-<p style="text-align:left"><strong>//</strong> : Reste entier d'une division</p>
+<p style="text-align:left"><strong>//</strong> : Quotient d'une division</p>
 </div></div>
 <div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 347px; height: 333px; left: 533px; top: 296px;" data-block-id="69570a36ab8087c07b88f67815730c66"><div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 19; font-size: 177%;"><pre class="python"><code>x = 10
 y = 3
@@ -1618,36 +1618,36 @@ file.close()</code></pre></div></div>
 </div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 591px;" data-block-id="ab4dc9c86cfb73f0cafa9d942cc25404"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
 <p style="text-align:left">Il est parfois plus simple de passer des commandes système, par exemple pour s'interfacer avec un logiciel.</p>
-</div></div></section><section data-id="f080a047cb9e067cf9ebe48bb5e7b300"><div class="sl-block" data-block-type="text" style="height: auto; width: 912px; left: 24px; top: 51px;" data-block-id="84a34d10757238f3d1b8ab4da5f51727"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+</div></div></section><section data-id="f080a047cb9e067cf9ebe48bb5e7b300"><div class="sl-block" data-block-type="text" style="height: auto; width: 912px; left: 24px; top: 51px;" data-block-id="84a34d10757238f3d1b8ab4da5f51727"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
 <h2>Passer une commande asynchrone.</h2>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 235px;" data-block-id="c2644adc7ddcd0cf32d7b301beca16f1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 235px;" data-block-id="c2644adc7ddcd0cf32d7b301beca16f1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
 <p style="text-align:left">Deux façons de passer des commandes : <strong>Synchrone</strong> &amp; <strong>Asynchrone</strong>.</p>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 330px;" data-block-id="1e55a3e37f9bbab3863b3222e9c602e6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 350px;" data-block-id="1e55a3e37f9bbab3863b3222e9c602e6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
 <p style="text-align:left">Commande asynchrone = Python <em>n'attend pas la fin</em> + <em>ne dispose pas du retour</em>.</p>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 439px;" data-block-id="2089d3e434cb995da5001857b7ae2a63"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
-<p style="text-align: left;">On utilise <strong>os.system()</strong> avec la commande en argument.</p>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 466px;" data-block-id="2089d3e434cb995da5001857b7ae2a63"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p style="text-align:left">On utilise <strong>os.popen()</strong> avec la commande en argument. Il retourne une variable permettant de lire le résultat de la commande avec <strong>read()</strong>.</p>
 </div></div>
-<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 172px; left: 80px; top: 517px;" data-block-id="de90369e85d5abd2c51e79babc75381d"><div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 15; font-size: 195%;"><pre class="python"><code>#!/usr/bin/env python3.5
-#-*- coding: utf-8 -*-
-import os
-os.system('touch ./file.tmp')</code></pre></div></div></section><section data-id="9d62458c38714d71fce77f77d3c8522c"><div class="sl-block" data-block-type="text" style="height: auto; width: 912px; left: 24px; top: 51px;" data-block-id="0d5e637147d7388e8b37100647dea442"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
-<h2>Passer une commande synchrone.</h2>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 223px;" data-block-id="2725983bd4c7063e329d754a1a5fcc9b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
-<p style="text-align:left">Commande synchrone = Python <em>attend la fin</em> +<em> dispose du retour</em>.</p>
-</div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 323px;" data-block-id="88e6c9ae1c9f66e2811e574bc0fc9c1a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
-<p style="text-align:left">On utilise <strong>os.popen()</strong> avec la commande en argument, qui va retourner un objet permettant de lire le retour avec <strong>read()</strong>.</p>
-</div></div>
-<div class="sl-block" data-block-type="code" style="width: 800px; height: 240px; left: 80px; top: 452px;" data-block-id="4b30b0cbf42ded7e9d1dd0e55b3e3564"><div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 14; font-size: 195%;"><pre class="python"><code>#!/usr/bin/env python3.5
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 208px; left: 80px; top: 466px;" data-block-id="ee2858fca78a1e6e1c65d4911f39e630"><div class="sl-block-content fragment" data-highlight-theme="obsidian" style="z-index: 15; font-size: 137%;" data-fragment-index="0"><pre class="python"><code>#!/usr/bin/env python3.5
 #-*- coding: utf-8 -*-
 import os
 command = os.popen('ls ./')
 command_return = command.read()
-print(command_return)</code></pre></div></div></section></section><section class="stack" data-id="d5f68320f09bacab18a34894ec8059bd"><section data-id="171a0538f161c155c4cd6d83463c1712">
+print(command_return)</code></pre></div></div></section><section data-id="9d62458c38714d71fce77f77d3c8522c"><div class="sl-block" data-block-type="text" style="height: auto; width: 912px; left: 24px; top: 51px;" data-block-id="0d5e637147d7388e8b37100647dea442"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<h2>Passer une commande synchrone.</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 223px;" data-block-id="2725983bd4c7063e329d754a1a5fcc9b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left">Commande synchrone = Python <em>attend la fin</em> +<em> dispose du retour</em>.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 323px;" data-block-id="88e6c9ae1c9f66e2811e574bc0fc9c1a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align:left">On utilise <strong>os.system()</strong> avec la commande en argument et il va directement afficher le retour.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 172px; left: 80px; top: 491px;" data-block-id="cf9cf65bf6791578f9c02990c6364f73"><div class="sl-block-content" data-highlight-theme="obsidian" style="z-index: 15; font-size: 195%;"><pre class="python"><code>#!/usr/bin/env python3.5
+#-*- coding: utf-8 -*-
+import os
+os.system('touch ./file.tmp')</code></pre></div></div></section></section><section class="stack" data-id="d5f68320f09bacab18a34894ec8059bd"><section data-id="171a0538f161c155c4cd6d83463c1712">
 
 
 
@@ -1810,17 +1810,44 @@ mysql_cursor.execute('INSERT INTO user (firstname, lastname, age) VALUES (%(firs
 <h2>Que fais le script ?</h2>
 </div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 221px;" data-block-id="e84d246b9bd81521dd2b8a9b88883e3a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
-<p style="text-align:left"><span style="font-size:1.2em"><strong>1.</strong> Cherche la liste des cryptos disponibles sur <a href="https://cryptocompare.com" target="_blank">cryptocompare.com</a> et l'affiche</span></p>
+<p style="text-align:left"><span style="font-size:1.2em"><strong>1.</strong> Demande à l'utilisateur la crypto dont il veut le prix ou s'il veut la liste des cryptos disponibles.</span></p>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 350px;" data-block-id="3226d6ff8df7e8906127d3b96412563f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
-<p style="text-align:left"><span style="font-size:1.2em"><strong>2.</strong> Demande à l'utilisateur la crypto dont il veut le prix</span></p>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 405px;" data-block-id="3226d6ff8df7e8906127d3b96412563f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align:left"><span style="font-size:1.2em"><strong>2. </strong>Cherche la liste des cryptos et les affiches. Ou cherche le prix <em>via l'API</em> de cryptocompare.com et l'affiche</span></p>
 </div></div>
-<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 479px;" data-block-id="f3a09e342c0616a3fd61f6d3539bb8cd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
-<p style="text-align:left"><span style="font-size:1.2em"><strong>3.</strong> Cherche le prix <em>via l'API</em> de cryptocompare.com et l'affiche</span></p>
-</div></div>
+
 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 607px;" data-block-id="9dd620d62d5706a3cb3b179d08aa2172"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
-<p style="text-align:left"><span style="font-size:1.2em"><strong>4.</strong> Retour au n°2</span></p>
-</div></div></section></section><section class="stack" data-id="2aaef7fe4cb2233b9f931195bf9e5554"><section data-id="6e4757504dee6a824adb7b2d4bda6bd4"><div class="sl-block" data-block-type="text" style="height: auto; width: 798px; left: 81px; top: 91px;" data-block-id="c7c3c37754f9d0a8dfdc9c04061f42bd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p style="text-align:left"><span style="font-size:1.2em"><strong>3.</strong> Retour au n°1</span></p>
+</div></div></section><section data-id="fae7f7deff6db367fa0ce9af2f177899">
+
+
+
+
+
+
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 82px;" data-block-id="717dc28f6b59266f3f9ef3444a62fa56"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<h2>Rendu</h2>
+</div></div>
+
+
+
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 209px; height: 209px; left: 56px; top: 232px;" data-block-id="2ae19e568d913ed706213abab181b87e"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="512" data-natural-height="512" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/368788/images/4664084/calendar.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 209px; height: 174px; left: 376px; top: 249.5px;" data-block-id="afc290a2c5c2467ab174f302b809696b"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="800" data-natural-height="665" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/368788/images/1733617/Octocat.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 209px; height: 209px; left: 696px; top: 232px;" data-block-id="f688cfcb0d874d6231191d21a96ec037"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="512" data-natural-height="512" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/368788/images/4672186/send.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 284px; left: 18px; top: 490px;" data-block-id="60fc3cbf5d663c378736effe9f74877e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<p>Prochaine séance</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 284px; left: 339px; top: 490px;" data-block-id="0b93af48623f5e0db7a8e9cc92ae5ce1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<p>Sous forme de repo GitHub</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 284px; left: 658px; top: 490px;" data-block-id="fe1cb48f37ca3764b7e6c19c448a7d47"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;">
+<p>Lien du GitHub par mail</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 611px;" data-block-id="b136cf60aa7dcfbf50246be4482d1be2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18;">
+<p><strong>Sujet du mail :</strong> Cours IoT - TP crypto</p>
+</div></div></section><section data-id="4967b4e6e647d4732f3c44f12683c5ff"></section></section><section class="stack" data-id="2aaef7fe4cb2233b9f931195bf9e5554"><section data-id="6e4757504dee6a824adb7b2d4bda6bd4"><div class="sl-block" data-block-type="text" style="height: auto; width: 798px; left: 81px; top: 91px;" data-block-id="c7c3c37754f9d0a8dfdc9c04061f42bd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
 <h2>Quelques bonnes adresses sur Python</h2>
 </div></div>
 <div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 292px; height: 292px; left: 334px; top: 295px;" data-block-id="4cdfc6bf3f2ddff81801d44ff936cbb1"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="512" data-natural-height="512" data-lazy-loaded="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/368788/images/4611280/map-location.png"></div></div></section><section data-id="3b0b279746f04a985066e0a8af279597"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 279px;" data-block-id="d0f54c2138d9deb05d919eeef73f7159"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
@@ -1857,7 +1884,7 @@ mysql_cursor.execute('INSERT INTO user (firstname, lastname, age) VALUES (%(firs
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":368788,"username":"plebweb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/f47bcbe4c250941d72745014b283682b?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":203982,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":"default","phone_number":"669529042","phone_country_code":"33","media_sources":null},"email":"plebwebsas@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":145366101,"storage_limit":262144000},"deck":{"id":1170729,"slug":"introduction-python","title":"Introduction à Python","description":"","width":960,"height":700,"visibility":"all","published_at":"2018-02-07T15:13:51.585Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/45d79cfef7c6cf98792b0464f9f736ab/thumb.jpg?1518031216","view_count":7,"user":{"id":368788,"username":"plebweb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/f47bcbe4c250941d72745014b283682b?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":203982,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"opensans","theme_color":"blue-yellow","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":116,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1519258130995,"font_typekit":null,"font_google":null,"notes":{}},"user":{"id":368788,"username":"plebweb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/f47bcbe4c250941d72745014b283682b?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":203982,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+	var SLConfig = {"current_user":{"id":368788,"username":"plebweb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/f47bcbe4c250941d72745014b283682b?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":203982,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":"default","phone_number":"669529042","phone_country_code":"33","media_sources":null},"email":"plebwebsas@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":145366101,"storage_limit":262144000},"deck":{"id":1170729,"slug":"introduction-python","title":"Introduction à Python","description":"","width":960,"height":700,"visibility":"all","published_at":"2018-02-07T15:13:51.585Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/45d79cfef7c6cf98792b0464f9f736ab/thumb.jpg?1518031216","view_count":17,"user":{"id":368788,"username":"plebweb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/f47bcbe4c250941d72745014b283682b?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":203982,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"opensans","theme_color":"blue-yellow","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":118,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1521459097843,"font_typekit":null,"font_google":null,"notes":{}},"user":{"id":368788,"username":"plebweb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/f47bcbe4c250941d72745014b283682b?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":203982,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
 </script>
 
 		<script>
