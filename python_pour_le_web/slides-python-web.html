@@ -20,7 +20,7 @@
 </style>
 
 		<meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="roL/UXJ0lkoFghIJOYnx3P55Q/465h58qf95pNVEKl+r8DByu1WST5rdEJQahBZSmPvsvNV/JqLhw2JSiFFDBQ==" />
+<meta name="csrf-token" content="8Zaj7K3uY/EdiyA4aXDiPSYFptcKCHVWkSZPtF8t7an05GzPZM9n9ILUIqVKfQWzQIcJleWRTYjZGlRCAjiE8w==" />
 		<style id="user-css-output" type="text/css"></style>
 	</head>
 	<body>
@@ -892,7 +892,7 @@ def contact () :
 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 447px;" data-block-id="0ed96c1bee26f809df5b206ec6bbe50c"><div class="sl-block-content fragment fade-out" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0">
 <p>1. Téléchargez le fichier de base de la base de données à l'adresse suivante :</p>
 
-<p><span style="font-size:1.2em"><a href="https://raw.githubusercontent.com/OsaAjani/cours-iot/master/python_pour_le_web/create_database.sql" target="_blank">https://raw.githubusercontent.com/OsaAjani/cours-iot/master/python_pour_le_web/create_database.sql</a></span></p>
+<p><span style="font-size:1.2em"><a href="https://bit.ly/2pFUxSP" target="_blank">https://bit.ly/2pFUxSP</a></span></p>
 </div></div>
 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 786px; left: 87px; top: 502px;" data-block-id="5288db272ba48cbb1be0f426aa96cb70"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="0">
 <p><span style="font-size:1.0em">2. Exécuter le fichier dans MySQL<strong>.</strong></span></p>
@@ -981,12 +981,20 @@ def show_entries () :
 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 811px; left: 80px; top: 465px;" data-block-id="9d2d0001d647d076490e1ad4424eb613"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;" dir="ui" data-fragment-index="0">
 <p style="text-align:left">Créez le fichier "<strong>/templates/show-entries.html</strong>"</p>
 </div></div>
-<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 126px; left: 80px; top: 515px;" data-block-id="08a0ab184eb017e7e800a786655c8368"><div class="sl-block-content fragment" data-highlight-theme="obsidian" style="z-index: 17;" data-fragment-index="0"><pre class="python"><code>@app.route('/show-entries/')
-def show_entries () :
-    db = get_db()
-    db.execute('SELECT name, value FROM entries')
-    entries = db.fetchall()
-    return render_template('show-entries.html', entries = entries)</code></pre></div></div></section><section data-id="fef5728ae88f2a86d622b0861f4a5af5">
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 800px; height: 126px; left: 80px; top: 515px;" data-block-id="08a0ab184eb017e7e800a786655c8368"><div class="sl-block-content fragment" data-highlight-theme="obsidian" style="z-index: 17;" data-fragment-index="0"><pre class="python"><code>{% extends 'layout.html' %}
+
+{% block titre %}
+    Show entries
+{% endblock %}
+
+{% block body %}
+    &lt;h1&gt;That's all the entries&lt;/h1&gt;
+    &lt;ul&gt;
+        {% for entrie in entries %}
+            &lt;li&gt;{{ entrie.0 }} = {{ entrie.1 }}&lt;/li&gt;
+        {% endfor %}
+    &lt;/ul&gt;
+{% endblock %}</code></pre></div></div></section><section data-id="fef5728ae88f2a86d622b0861f4a5af5">
 
 
 
@@ -1374,7 +1382,7 @@ sudo /etc/init.d/apache2 restart</code></pre></div></div></section><section data
 
 		
 <script>
-	var SLConfig = {"current_user":{"id":368788,"username":"plebweb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/f47bcbe4c250941d72745014b283682b?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":203982,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":"default","phone_number":"669529042","phone_country_code":"33","media_sources":null},"email":"plebwebsas@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":146058894,"storage_limit":262144000},"deck":{"id":1176746,"slug":"python-web","title":"Python pour le web","description":"","width":960,"height":700,"visibility":"all","published_at":"2018-02-15T16:24:29.934Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/fe78835426af4a730f73224b105a42ac/thumb.jpg?1518711935","view_count":3,"user":{"id":368788,"username":"plebweb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/f47bcbe4c250941d72745014b283682b?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":203982,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"opensans","theme_color":"blue-yellow","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":71,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1520344560768,"font_typekit":null,"font_google":null,"notes":{}},"user":{"id":368788,"username":"plebweb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/f47bcbe4c250941d72745014b283682b?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":203982,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
+	var SLConfig = {"current_user":{"id":368788,"username":"plebweb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/f47bcbe4c250941d72745014b283682b?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":203982,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null,"editor_grid":true,"editor_snap":true,"developer_mode":true,"speaker_layout":"default","phone_number":"669529042","phone_country_code":"33","media_sources":null},"email":"plebwebsas@gmail.com","notify_on_receipt":true,"billing_address":null,"billing_vat_id":null,"editor_tutorial_completed":true,"manually_upgraded":false,"deck_user_editor_limit":1,"storage_used":146058894,"storage_limit":262144000},"deck":{"id":1176746,"slug":"python-web","title":"Python pour le web","description":"","width":960,"height":700,"visibility":"all","published_at":"2018-02-15T16:24:29.934Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/fe78835426af4a730f73224b105a42ac/thumb.jpg?1518711935","view_count":3,"user":{"id":368788,"username":"plebweb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/f47bcbe4c250941d72745014b283682b?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":203982,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"opensans","theme_color":"blue-yellow","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":71,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1522056923563,"font_typekit":null,"font_google":null,"notes":{}},"user":{"id":368788,"username":"plebweb","name":null,"description":null,"thumbnail_url":"https://www.gravatar.com/avatar/f47bcbe4c250941d72745014b283682b?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":false,"pro":false,"lite":false,"team_id":null,"settings":{"id":203982,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null}}};
 </script>
 
 		<script>
