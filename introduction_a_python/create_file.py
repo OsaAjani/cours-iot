@@ -1,4 +1,5 @@
-#!/usr/bin/env python3.5
-#-*- coding: utf-8 -*-
+#!/usr/bin/env python3.6
+
 import os
-os.system('touch ./file.tmp')
+
+os.mknod('file.tmp', 700)

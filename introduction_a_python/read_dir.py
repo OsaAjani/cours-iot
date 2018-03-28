@@ -1,6 +1,5 @@
-#!/usr/bin/env python3.5
-#-*- coding: utf-8 -*-
+#!/usr/bin/env python3.6
+
 import os
-command = os.popen('ls ./')
-command_return = command.read()
-print(command_return)
+
+print(os.listdir('./'))
