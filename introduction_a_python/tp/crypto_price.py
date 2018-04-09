@@ -37,7 +37,7 @@ Et pour quitter : quit.
 Acronyme : """)
    
     if coin == 'quit' :
-        exit()
+        quit()
 
     if coin == 'list' :
         show_coin_list()
@@ -45,4 +45,4 @@ Acronyme : """)
     
     show_coin_price(coin)
 
-quit()
+
